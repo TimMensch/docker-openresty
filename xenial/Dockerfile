@@ -1,7 +1,7 @@
 # Dockerfile - Ubuntu Xenial
 # https://github.com/openresty/docker-openresty
 
-FROM darksheer/dockerhub-ubuntu
+FROM darksheer/ubuntu
 
 MAINTAINER Evan Wies <evan@neomantra.net>
 
