@@ -45,6 +45,8 @@ ARG RESTY_CONFIG_OPTIONS="\
 # These are not intended to be user-specified
 ARG _RESTY_CONFIG_DEPS="--with-openssl=/tmp/openssl-${RESTY_OPENSSL_VERSION} --with-pcre=/tmp/pcre-${RESTY_PCRE_VERSION}"
 
+# Update to latest packages
+RUN     apt-get update -y && apt-get upgrade -y
 
 # 1) Install apt dependencies
 # 2) Download and untar OpenSSL, PCRE, and OpenResty
